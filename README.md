@@ -1,12 +1,7 @@
 
 # FlowDC: Flow-Based Decoupling-Decay for Complex Image Editing
 
-<div align="center">
-
-[![arXiv](https://img.shields.io/badge/arXiv-Paper-<COLOR>.svg)](https://arxiv.org/abs/2512.11395)
-<!-- [![Project Page](https://img.shields.io/badge/Project-Website-blue)](YOUR_PROJECT_PAGE_LINK)
-[![Hugging Face](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Demo-yellow)](YOUR_HF_DEMO_LINK) -->
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![arXiv](https://img.shields.io/badge/arXiv-Paper-<COLOR>.svg)](https://arxiv.org/abs/2512.11395) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 **Official PyTorch implementation of the paper: "FlowDC: Flow-Based Decoupling-Decay for Complex Image Editing"**
 
