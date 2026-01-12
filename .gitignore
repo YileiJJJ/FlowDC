@@ -1,0 +1,4 @@
+*.ipynb
+results/**/*.jpg
+results/**/*.png
+results/**/*.yaml
