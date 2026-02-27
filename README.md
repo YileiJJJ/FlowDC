@@ -1,5 +1,6 @@
 
-# FlowDC: Flow-Based Decoupling-Decay for Complex Image Editing
+# [CVPR 2026] FlowDC: Flow-Based Decoupling-Decay for Complex Image Editing
+
 
 [![arXiv](https://img.shields.io/badge/arXiv-Paper-<COLOR>.svg)](https://arxiv.org/abs/2512.11395) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
