@@ -2,3 +2,5 @@
 results/**/*.jpg
 results/**/*.png
 results/**/*.yaml
+dataset/*
+!dataset/Complex_PIE_Bench.yaml

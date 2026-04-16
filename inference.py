@@ -18,7 +18,7 @@ def seed_everything(seed=42):
     torch.manual_seed(seed)
     torch.cuda.manual_seed_all(seed)
 
-def FlowDC(pipe, image_path, src_prompt, tar_prompts, save_root, seed, FlowDC_param):
+def FlowDC(pipe, image_path, src_prompt, tar_prompts, save_root, seed, FlowDC_param, generate_from_head=False):
     image = PIL.Image.open(image_path).convert("RGB").resize((1024,1024))
     
     target_names = [ f'0{k}' for k in range(len(tar_prompts))]
@@ -32,6 +32,9 @@ def FlowDC(pipe, image_path, src_prompt, tar_prompts, save_root, seed, FlowDC_pa
         
     target_name = target_names[-1]
     image_save_path = os.path.join(save_folder, target_name+'.png')
+    if os.path.exists(image_save_path) and generate_from_head is False:
+        print(f'{image_save_path} already exists. Skipping.')
+        return
     print('-' * 50)
     print(f'Editing for: {init_img_name}')
 

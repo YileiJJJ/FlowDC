@@ -1,5 +1,5 @@
 
-# [CVPR 2026] FlowDC: Flow-Based Decoupling-Decay for Complex Image Editing
+# [CVPR 2026 Highlight] FlowDC: Flow-Based Decoupling-Decay for Complex Image Editing
 
 
 [![arXiv](https://img.shields.io/badge/arXiv-Paper-<COLOR>.svg)](https://arxiv.org/abs/2512.11395) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
@@ -18,8 +18,7 @@
 ## 📅 TODO & Roadmap
 
 - [x] Release inference code.
-- [ ] Release Complex-PIE-Bench.
-- [ ] Add Project Page.
+- [x] Release Complex-PIE-Bench.
 
 ## 🛠️ Installation
 
@@ -78,6 +77,27 @@ python inference.py \
 
 More examples in `run_script.sh`
 
+### Evaluation of Complex PIE-Bench Dataset
+
+**1. Preparation** First, download the original PIE-Bench dataset from [here](https://github.com/cure-lab/PnPInversion) and update the image directory path in `dataset/Complex_PIE_Bench.yaml`.
+
+**2. Generation** To generate the edited results, run the following command:
+
+```bash
+python run_complex_bench.py \
+    --model_path black-forest-labs/FLUX.1-dev
+```
+
+**3. Evaluation** To evaluate the generated results, run the evaluation script. *(Note: Please ensure the model paths for CLIP and DINOv2 match your local environment.)*
+
+```bash
+python run_evaluation.py \
+    --dataset_path dataset/Complex_PIE_Bench.yaml \
+    --dataset_root dataset/Complex_PIE_Bench \
+    --generated_img_root results/Complex_PIE_Bench \
+    --clip_model_path /path/to/your/clip-vit-large-patch14 \
+    --dino_model_dir /path/to/your/dinov2
+```
 
 ## 🔗 Citation
 
