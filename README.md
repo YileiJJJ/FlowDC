@@ -1,12 +1,11 @@
 
+
 # [CVPR 2026 Highlight] FlowDC: Flow-Based Decoupling-Decay for Complex Image Editing
 
 
 [![arXiv](https://img.shields.io/badge/arXiv-Paper-<COLOR>.svg)](https://arxiv.org/abs/2512.11395) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 **Official PyTorch implementation of the paper: "FlowDC: Flow-Based Decoupling-Decay for Complex Image Editing"**
-
-</div>
 
 ---
 
